@@ -13,10 +13,12 @@ const initialState = notesAdapter.getInitialState()
 export const notesApiSlice = apiSlice.injectEndpoints({
     endpoints: builder => ({
         getNotes: builder.query({
-            query: () => '/notes',
-            validateStatus: (response, result) => {
-                return response.status === 200 && !result.isError
-            },
+            query: () => ({
+                url: '/notes',
+                validateStatus: (response, result) => {
+                    return response.status === 200 && !result.isError
+                },
+            }),
             transformResponse: responseData => {
                 const loadedNotes = responseData.map(note => {
                     note.id = note._id
@@ -76,16 +78,14 @@ export const {
     useUpdateNoteMutation,
     useDeleteNoteMutation,
 } = notesApiSlice
-
 export const selectNotesResult = notesApiSlice.endpoints.getNotes.select()
 
 const selectNotesData = createSelector(
     selectNotesResult,
-    notesResult => notesResult.data )
-
+    notesResult => notesResult.data 
+)
 export const {
     selectAll: selectAllNotes,
     selectById: selectNoteById,
     selectIds: selectNoteIds
-   
 } = notesAdapter.getSelectors(state => selectNotesData(state) ?? initialState)

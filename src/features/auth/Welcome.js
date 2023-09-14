@@ -1,10 +1,11 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
+import useAuth from '../../hooks/useAuth'
 
 const Welcome = () => {
 
-    const date = new Date()
+    const { username, isManager, isAdmin } = useAuth()
 
+    const date = new Date()
     const today = new Intl.DateTimeFormat('vi-VN', { dateStyle: 'full', timeStyle: 'long' }).format(date)
 
     const content = (
@@ -12,14 +13,15 @@ const Welcome = () => {
 
             <p>{today}</p>
 
-            <h1>Xin chao</h1>
-            <h1>Web & Database</h1>
+            <h1>Xin chao {username}!</h1>
 
             <p><Link to="/dash/notes">Note</Link></p>
+
             <p><Link to="/dash/notes/new">Them note</Link></p>
 
-            <p><Link to="/dash/users">Nhan vien</Link></p>
-            <p><Link to="/dash/users/new">Them nhan vien</Link></p>
+            {(isManager || isAdmin) && <p><Link to="/dash/users">Nhan vien</Link></p>}
+
+            {(isManager || isAdmin) && <p><Link to="/dash/users/new">Them nhan vien</Link></p>}
 
         </section>
     )
