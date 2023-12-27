@@ -174,7 +174,7 @@ const EditUserForm = ({ user }) => {
                 >
                     {options}
                 </select>
-
+ 
             </form>
         </>
     )
