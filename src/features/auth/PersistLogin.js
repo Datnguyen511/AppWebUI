@@ -50,13 +50,13 @@ const PersistLogin = () => {
         content = <Outlet />
     } else if (isLoading) { 
         console.log('loading')
-        content = <p>Dang chay...</p>
+        content = <p>Đang chạy...</p>
     } else if (isError) { 
         console.log('error')
         content = (
             <p className='errmsg'>
                 {`${error?.data?.message} - `}
-                <Link to="/login">Vui long dang nhap lai</Link>.
+                <Link to="/login">Vui lòng đăng nhập lại</Link>.
             </p>
         )
     } else if (isSuccess && trueSuccess) { 
@@ -70,4 +70,5 @@ const PersistLogin = () => {
 
     return content
 }
+
 export default PersistLogin

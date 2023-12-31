@@ -5,7 +5,7 @@ import PulseLoader from 'react-spinners/PulseLoader'
 import useTitle from '../../hooks/useTitle'
 
 const EditUser = () => {
-    useTitle('Dieu chinh nhan vien')
+    useTitle('Điều chỉnh nhân viên')
 
     const { id } = useParams()
 

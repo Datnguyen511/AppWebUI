@@ -13,15 +13,15 @@ const Welcome = () => {
 
             <p>{today}</p>
 
-            <h1>Xin chao {username}!</h1>
+            <h1>Xin chào {username}!</h1>
 
             <p><Link to="/dash/notes">Note</Link></p>
 
-            <p><Link to="/dash/notes/new">Them note</Link></p>
+            <p><Link to="/dash/notes/new">Thêm ghi chú</Link></p>
 
-            {(isManager || isAdmin) && <p><Link to="/dash/users">Nhan vien</Link></p>}
+            {(isManager || isAdmin) && <p><Link to="/dash/users">Nhân viên</Link></p>}
 
-            {(isManager || isAdmin) && <p><Link to="/dash/users/new">Them nhan vien</Link></p>}
+            {(isManager || isAdmin) && <p><Link to="/dash/users/new">Thêm nhân viên</Link></p>}
 
         </section>
     )

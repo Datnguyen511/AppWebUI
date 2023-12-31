@@ -23,4 +23,5 @@ const useAuth = () => {
 
     return { username: '', roles: [], isManager, isAdmin, status }
 }
+
 export default useAuth

@@ -107,7 +107,7 @@ const EditUserForm = ({ user }) => {
 
             <form className="form" onSubmit={e => e.preventDefault()}>
                 <div className="form__title-row">
-                    <h2>Chinh sua</h2>
+                    <h2>Chỉnh sửa</h2>
                     <div className="form__action-buttons">
                         <button
                             className="icon-button"
@@ -127,7 +127,7 @@ const EditUserForm = ({ user }) => {
                     </div>
                 </div>
                 <label className="form__label" htmlFor="username">
-                    Ten dang nhap: <span className="nowrap">[3-20 letters]</span></label>
+                    Tên đăng nhập: <span className="nowrap">[3-20 kí tự]</span></label>
                 <input
                     className={`form__input ${validUserClass}`}
                     id="username"
@@ -139,7 +139,7 @@ const EditUserForm = ({ user }) => {
                 />
 
                 <label className="form__label" htmlFor="password">
-                    Mat khau: <span className="nowrap">[de trong = khong doi]</span> <span className="nowrap">[4-12 ki tu]</span></label>
+                    Mật khẩu: <span className="nowrap">[Để trống = Không đổi]</span> <span className="nowrap">[4-12 kí tự]</span></label>
                 <input
                     className={`form__input ${validPwdClass}`}
                     id="password"
@@ -150,7 +150,7 @@ const EditUserForm = ({ user }) => {
                 />
 
                 <label className="form__label form__checkbox-container" htmlFor="user-active">
-                    Trang thai:
+                    Hoạt động:
                     <input
                         className="form__checkbox"
                         id="user-active"
@@ -162,7 +162,7 @@ const EditUserForm = ({ user }) => {
                 </label>
 
                 <label className="form__label" htmlFor="roles">
-                    Cong viec:</label>
+                    Công việc:</label>
                 <select
                     id="roles"
                     name="roles"

@@ -96,7 +96,7 @@ const EditNoteForm = ({ note, users }) => {
 
             <form className="form" onSubmit={e => e.preventDefault()}>
                 <div className="form__title-row">
-                    <h2>Chinh sua note #{note.ticket}</h2>
+                    <h2>Chỉnh sửa #{note.ticket}</h2>
                     <div className="form__action-buttons">
                         <button
                             className="icon-button"
@@ -110,7 +110,7 @@ const EditNoteForm = ({ note, users }) => {
                     </div>
                 </div>
                 <label className="form__label" htmlFor="note-title">
-                    Tieu de:</label>
+                    Tiêu đề:</label>
                 <input
                     className={`form__input ${validTitleClass}`}
                     id="note-title"
@@ -122,7 +122,7 @@ const EditNoteForm = ({ note, users }) => {
                 />
 
                 <label className="form__label" htmlFor="note-text">
-                    Noi dung:</label>
+                    Nội dung:</label>
                 <textarea
                     className={`form__input form__input--text ${validTextClass}`}
                     id="note-text"
@@ -133,7 +133,7 @@ const EditNoteForm = ({ note, users }) => {
                 <div className="form__row">
                     <div className="form__divider">
                         <label className="form__label form__checkbox-container" htmlFor="note-completed">
-                            Tien do:
+                            Tiến độ:
                             <input
                                 className="form__checkbox"
                                 id="note-completed"
@@ -145,7 +145,7 @@ const EditNoteForm = ({ note, users }) => {
                         </label>
 
                         <label className="form__label form__checkbox-container" htmlFor="note-username">
-                            Giao cho:</label>
+                            Của:</label>
                         <select
                             id="note-username"
                             name="username"
@@ -157,8 +157,8 @@ const EditNoteForm = ({ note, users }) => {
                         </select>
                     </div>
                     <div className="form__divider">
-                        <p className="form__created">Da tao:<br />{created}</p>
-                        <p className="form__updated">Da cap nhat:<br />{updated}</p>
+                        <p className="form__created">Đã tạo:<br />{created}</p>
+                        <p className="form__updated">Đã cập nhật:<br />{updated}</p>
                     </div>
                 </div>
             </form>

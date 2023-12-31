@@ -30,7 +30,7 @@ const EditNote = () => {
 
     if (!isManager && !isAdmin) {
         if (note.username !== username) {
-            return <p className="errmsg">Khong co quyen truy cap</p>
+            return <p className="errmsg">Không có quyền truy cập</p>
         }
     }
 

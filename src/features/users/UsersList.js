@@ -17,7 +17,7 @@ const UsersList = () => {
 
     let content
 
-    if (isLoading) content = <p>Loading...</p>
+    if (isLoading) content = <p>Đang chạy...</p>
 
     if (isError) {
         content = <p className="errmsg">{error?.data?.message}</p>
@@ -33,9 +33,9 @@ const UsersList = () => {
             <table className="table table--users">
                 <thead className="table__thead">
                     <tr>
-                        <th scope="col" className="table__th user__username">Ten dang nhap</th>
-                        <th scope="col" className="table__th user__roles">Cong viec</th>
-                        <th scope="col" className="table__th user__edit">Chinh sua</th>
+                        <th scope="col" className="table__th user__username">Tên đăng nhập</th>
+                        <th scope="col" className="table__th user__roles">Công việc</th>
+                        <th scope="col" className="table__th user__edit">Chỉnh sửa</th>
                     </tr>
                 </thead>
                 <tbody>

@@ -11,7 +11,8 @@ const Public = () => {
                 <address className="public__addr">
                     Nga Cafe<br />
                     55 Cửu Long<br />
-                    <a href="">0908748568</a>
+                    <a href="">0938766109</a><br />
+                    <a href="">Group 2</a>
                 </address>
                 <br />
             </main>

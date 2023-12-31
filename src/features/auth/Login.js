@@ -62,13 +62,13 @@ const Login = () => {
     const content = (
         <section className="public">
             <header>
-                <h1>Dang nhap</h1>
+                <h1>Đăng nhập</h1>
             </header>
             <main className="login">
                 <p ref={errRef} className={errClass} aria-live="assertive">{errMsg}</p>
 
                 <form className="form" onSubmit={handleSubmit}>
-                    <label htmlFor="username">Ten dang nhap:</label>
+                    <label htmlFor="username">Tên đăng nhập:</label>
                     <input
                         className="form__input"
                         type="text"
@@ -80,7 +80,7 @@ const Login = () => {
                         required
                     />
 
-                    <label htmlFor="password">Mat khau:</label>
+                    <label htmlFor="password">Mật khẩu:</label>
                     <input
                         className="form__input"
                         type="password"
@@ -89,7 +89,7 @@ const Login = () => {
                         value={password}
                         required
                     />
-                    <button className="form__submit-button">Dang nhap</button>
+                    <button className="form__submit-button">Đăng nhập</button>
 
 
                     <label htmlFor="persist" className="form__persist">
@@ -100,16 +100,17 @@ const Login = () => {
                             onChange={handleToggle}
                             checked={persist}
                         />
-                        Tin tuong thiet bi nay
+                        Tin tuởng thiết bị này
                     </label>
                 </form>
             </main>
             <footer>
-                <Link to="/">Tro ve</Link>
+                <Link to="/">Trở về</Link>
             </footer>
         </section>
     )
 
     return content
 }
+
 export default Login

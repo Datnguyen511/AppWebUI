@@ -84,7 +84,7 @@ const NewUserForm = () => {
 
             <form className="form" onSubmit={onSaveUserClicked}>
                 <div className="form__title-row">
-                    <h2>Nguoi dung moi</h2>
+                    <h2>Người dùng mới</h2>
                     <div className="form__action-buttons">
                         <button
                             className="icon-button"
@@ -96,7 +96,7 @@ const NewUserForm = () => {
                     </div>
                 </div>
                 <label className="form__label" htmlFor="username">
-                    Ten dang nhap: <span className="nowrap">[3-20 ki tu]</span></label>
+                    Tên đăng nhập: <span className="nowrap">[3-20 kí tự]</span></label>
                 <input
                     className={`form__input ${validUserClass}`}
                     id="username"
@@ -108,7 +108,7 @@ const NewUserForm = () => {
                 />
 
                 <label className="form__label" htmlFor="password">
-                    Mat khau: <span className="nowrap">[4-12 ki tu]</span></label>
+                    Mật khẩu: <span className="nowrap">[4-12 kí tự]</span></label>
                 <input
                     className={`form__input ${validPwdClass}`}
                     id="password"
@@ -119,7 +119,7 @@ const NewUserForm = () => {
                 />
 
                 <label className="form__label" htmlFor="roles">
-                    Cong viec:</label>
+                    Công việc:</label>
                 <select
                     id="roles"
                     name="roles"

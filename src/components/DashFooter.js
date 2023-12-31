@@ -1,3 +1,4 @@
+//footer
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHouse } from "@fortawesome/free-solid-svg-icons"
 import { useNavigate, useLocation } from 'react-router-dom'
@@ -28,8 +29,8 @@ const DashFooter = () => {
     const content = (
         <footer className="dash-footer">
             {goHomeButton}
-            <p>Nguoi dung: {username}</p>
-            <p>Vai tro: {status}</p>
+            <p>Người dùng: {username}</p>
+            <p>Vai trò: {status}</p>
         </footer>
     )
     return content

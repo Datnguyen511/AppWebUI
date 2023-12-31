@@ -13,4 +13,5 @@ const RequireAuth = ({ allowedRoles }) => {
 
     return content
 }
+
 export default RequireAuth

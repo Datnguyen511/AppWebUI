@@ -25,8 +25,8 @@ const Note = ({ noteId }) => {
             <tr className="table__row">
                 <td className="table__cell note__status">
                     {note.completed
-                        ? <span className="note__status--completed">Hoan thanh</span>
-                        : <span className="note__status--open">Chua hoan thanh</span>
+                        ? <span className="note__status--completed">Hoàn thành</span>
+                        : <span className="note__status--open">Chưa hoàn thành</span>
                     }
                 </td>
                 <td className="table__cell note__created">{created}</td>

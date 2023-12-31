@@ -42,12 +42,12 @@ const NotesList = () => {
             <table className="table table--notes">
                 <thead className="table__thead">
                     <tr>
-                        <th scope="col" className="table__th note__status">Ten dang nhap</th>
-                        <th scope="col" className="table__th note__created">Da tao</th>
-                        <th scope="col" className="table__th note__updated">Da cap nhat</th>
-                        <th scope="col" className="table__th note__title">Tieu de</th>
-                        <th scope="col" className="table__th note__username">Nguoi dung</th>
-                        <th scope="col" className="table__th note__edit">Chinh sua</th>
+                        <th scope="col" className="table__th note__status">Tên đăng nhập</th>
+                        <th scope="col" className="table__th note__created">Đã tạo</th>
+                        <th scope="col" className="table__th note__updated">Đã cập nhật</th>
+                        <th scope="col" className="table__th note__title">Tiêu đề</th>
+                        <th scope="col" className="table__th note__username">Người dùng</th>
+                        <th scope="col" className="table__th note__edit">Chỉnh sửa</th>
                     </tr>
                 </thead>
                 <tbody>

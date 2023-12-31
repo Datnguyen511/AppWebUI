@@ -72,7 +72,7 @@ const NewNoteForm = ({ users }) => {
                     </div>
                 </div>
                 <label className="form__label" htmlFor="title">
-                    Tieu de:</label>
+                    Tiêu đề:</label>
                 <input
                     className={`form__input ${validTitleClass}`}
                     id="title"
@@ -84,7 +84,7 @@ const NewNoteForm = ({ users }) => {
                 />
 
                 <label className="form__label" htmlFor="text">
-                    Noi dung:</label>
+                    Nội dung:</label>
                 <textarea
                     className={`form__input form__input--text ${validTextClass}`}
                     id="text"
@@ -94,7 +94,7 @@ const NewNoteForm = ({ users }) => {
                 />
 
                 <label className="form__label form__checkbox-container" htmlFor="username">
-                    So huu:</label>
+                    Của:</label>
                 <select
                     id="username"
                     name="username"

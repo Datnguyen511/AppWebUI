@@ -72,6 +72,7 @@ export const notesApiSlice = apiSlice.injectEndpoints({
     }),
 })
 
+
 export const {
     useGetNotesQuery,
     useAddNewNoteMutation,
